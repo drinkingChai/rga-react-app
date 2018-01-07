@@ -69,7 +69,7 @@ $exh-gutters: .8rem;
     padding: 2rem 0 2.5rem 0;
     p {
       line-height: 2rem;
-      color: #A8A8A8;
+      color: #a8a8a8;
     }
     p.small {
       display: none;
@@ -102,7 +102,7 @@ $exh-gutters: .8rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: #A8A8A8;
+  color: #a8a8a8;
   & span { margin-right: 1rem; }
 }
 
@@ -121,7 +121,7 @@ div[class^='Modal-modal-'] {
     position: absolute;
     top: -1.5rem;
     right: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 2rem;
   }
   & .loading {
@@ -130,7 +130,7 @@ div[class^='Modal-modal-'] {
     top: calc(50% - 2rem);
     // z-index: -1;
     border: solid 6px;
-    border-color: #EDF7F6;
+    border-color: #edf7f6;
     border-left-color: transparent;
     width: 4rem;
     height: 4rem;
