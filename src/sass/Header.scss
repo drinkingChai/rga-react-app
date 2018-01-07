@@ -1,0 +1,60 @@
+.Header {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0 2.5rem 0;
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    line-height: 2rem;
+    color: #a8a8a8;
+  }
+  p.small {
+    display: none;
+    padding: .5rem;
+  }
+
+  .rotated-text {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    h3 {
+      height: 200px;
+      position: absolute;
+      transform-origin: bottom center;
+      top: 0;
+      font-size: 1.7rem;
+    }
+    .inner {
+      position: relative;
+      width: fit-content;
+      left: -25%;
+      top: 25px;
+      left: -30%;
+      transform: rotate(-12deg);
+      transition: left 100ms;
+
+      @media screen and (max-width: 400px) { left: -32%; }
+      @media screen and (max-width: 370px) { left: -35%; }
+      @media screen and (max-width: 340px) { left: -38%; }
+      @media screen and (max-width: 325px) { left: -40%; }
+    }
+  }
+
+  @media screen and (max-width: 445px) {
+    h1 { font-size: 4rem; }
+    & p.large { display: none; }
+    & p.small { display: block; }
+    p { font-size: 1.4rem; }
+  }
+}
+
+@for $i from 1 through 100 { 
+  .rotate-#{$i}deg {
+    transform: rotate(($i*3)+deg);
+    left: (($i - 1)*8px);
+    top: 0;
+  }
+}

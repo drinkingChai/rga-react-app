@@ -1,0 +1,44 @@
+// modal override
+div[class^='Modal-overlay-'] {
+  align-items: center;
+}
+div[class^='Modal-modal-'] {
+  background-color: transparent;
+  box-shadow: none;
+  width: 100%;
+  max-width: 100%; // override
+  height: calc(100% - 3rem);
+  & .close {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: -1.5rem;
+    right: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  & .loading {
+    position: absolute;
+    left: calc(50% - 2rem);
+    top: calc(50% - 2rem);
+    border: solid 6px;
+    border-color: #edf7f6;
+    border-left-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    animation: spin 1500ms infinite linear;
+  }
+  & iframe {
+    position: relative;
+    z-index: 1;
+  }
+}
+svg[class^='Modal-closeIcon-'] {
+  display: none;
+}
+
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}

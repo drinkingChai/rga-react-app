@@ -2,7 +2,8 @@ export function youtubeEmbedUrl(youtubeId, options = {}) {
   // returns youtube embed URL with options
   let opts = {
     noControls: 'controls=0&amp',
-    noInfo: 'showinfo=0'
+    noInfo: 'showinfo=0',
+    autoplay: 'autoplay=1'
   }
 
   let optStr = Object.keys(options).map(opt => opts[opt]).join(';')

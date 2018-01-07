@@ -6,7 +6,6 @@ import './css/App.css';
 // components
 import Nav from './Nav'
 import Main from './Main'
-import Social from './Social'
 import Footer from './Footer'
 
 class App extends Component {
@@ -15,7 +14,6 @@ class App extends Component {
       <div className="App">
         <Nav /> 
         <Main />
-        <Social />
         <Footer />
       </div>
     );

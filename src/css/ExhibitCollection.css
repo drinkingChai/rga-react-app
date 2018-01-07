@@ -1,0 +1,16 @@
+.ExhibitCollection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.8rem;
+  padding: 0.8rem; }
+  @media screen and (max-width: 900px) {
+    .ExhibitCollection {
+      grid-template-columns: repeat(2, 1fr); }
+      .ExhibitCollection .Exhibit:last-child {
+        grid-column: span 2; } }
+  @media screen and (max-width: 600px) {
+    .ExhibitCollection {
+      grid-template-columns: 1fr; }
+      .ExhibitCollection .Exhibit:last-child {
+        grid-column: span 1; } }
