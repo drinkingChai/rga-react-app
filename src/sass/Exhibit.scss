@@ -1,0 +1,65 @@
+.Exhibit {
+  overflow: hidden;
+  background-size: cover;
+  padding-top: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .image {
+      transform: scale(1.6);
+    }
+    .info h4 {
+      transform: translateY(-100%);
+    }
+    .overlay {
+      opacity: .8;
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    transition: all 300ms;
+    z-index: -1;
+  }
+
+  .image {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.4);
+    transition: transform 350ms;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .9) 0%, transparent 90%);
+    padding: 30px;
+    color: #FFFFFF;
+    h4 {
+      line-height: 2rem;
+      transition: transform 200ms;
+    }
+    a {
+      display: block;
+      margin-top: 2rem;
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: 500;
+      color: #4688F0;
+      i {
+        margin-left: 3px;
+      }
+    }
+  }
+}
