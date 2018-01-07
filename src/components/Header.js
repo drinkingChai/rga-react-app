@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styles
-import './css/Header.css'
+import '../css/Header.css'
 
 const paragraphs = [
   "In the not too distant future, next Sunday, AD",

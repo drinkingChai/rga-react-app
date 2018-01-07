@@ -2,13 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 // styles
-import './css/ExhibitCollection.css'
+import '../css/ExhibitCollection.css'
 
 // components
 import Exhibit from './Exhibit'
 
 // redux
-import { toggleModal } from './redux/store'
+import { toggleModal } from '../redux/store'
 
 const ExhibitCollection = ({ collection, toggle }) => {
   return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // styles
-import './css/App.css';
+import '../css/App.css';
 
 // components
 import Nav from './Nav'

@@ -2,7 +2,7 @@ import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
 
 // style
-import './css/BackToTop.css'
+import '../css/BackToTop.css'
 
 export default function () {
   return (

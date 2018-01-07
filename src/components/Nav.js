@@ -1,10 +1,10 @@
 import React from 'react'
 
 // styles
-import './css/Nav.css'
+import '../css/Nav.css'
 
 // assets 
-import logo from './assets/logo.png'
+import logo from '../assets/logo.png'
 
 export default function (props) {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styles
-import './css/Social.css'
+import '../css/Social.css'
 
 export default function () {
   return (

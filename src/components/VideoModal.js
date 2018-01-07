@@ -3,13 +3,13 @@ import { connect } from 'react-redux'
 import Modal from 'react-responsive-modal'
 
 // styles
-import './css/VideoModal.css'
+import '../css/VideoModal.css'
 
 // redux
-import { toggleModal } from './redux/store'
+import { toggleModal } from '../redux/store'
 
 // helper
-import { youtubeEmbedUrl } from './urlFormat'
+import { youtubeEmbedUrl } from '../helpers/urlFormat'
 
 const VideoModal = ({ youtubeId, state, url, toggle }) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styles
-import './css/Footer.css'
+import '../css/Footer.css'
 
 export default function () {
   return (

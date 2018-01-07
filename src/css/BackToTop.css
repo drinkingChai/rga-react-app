@@ -4,7 +4,8 @@
   justify-content: flex-end;
   align-items: flex-end;
   color: #a8a8a8;
-  display: none; }
+  display: none;
+  cursor: pointer; }
   .BackToTop span {
     margin-right: 1rem; }
   @media screen and (max-width: 600px) {

@@ -1,10 +1,10 @@
 import React from 'react'
 
 // styles
-import './css/Exhibit.css'
+import '../css/Exhibit.css'
 
 // helpers
-import { youtubeThumbnail } from './urlFormat'
+import { youtubeThumbnail } from '../helpers/urlFormat'
 
 export default function ({ video, link, onClick }) {
   return (

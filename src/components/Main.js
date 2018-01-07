@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styles
-import './css/Main.css'
+import '../css/Main.css'
 
 // components
 import Header from './Header'
@@ -11,10 +11,10 @@ import Social from './Social'
 import ExhibitCollection from './ExhibitCollection'
 
 // helper
-import { youtubeEmbedUrl } from './urlFormat'
+import { youtubeEmbedUrl } from '../helpers/urlFormat'
 
 // video data
-import { videos, feature } from './assets/videos'
+import { videos, feature } from '../assets/videos'
 
 export default function () {
   return (
@@ -32,7 +32,7 @@ export default function () {
           allowFullScreen></iframe>
       </div>
 
-      <h4>Look what we found...</h4>
+      <h4 className='subheader'>Look what we found...</h4>
 
       <ExhibitCollection collection={ videos } />
       <BackToTop />
