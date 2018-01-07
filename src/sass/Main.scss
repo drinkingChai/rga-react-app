@@ -3,6 +3,7 @@
   .feature-video-container {
     background-color: #000000;
     height: calc(100vh - 71px);
+    transition: all 200ms;
   }
   h4.subheader {
     font-family: 'Permanent Marker', cursive;
