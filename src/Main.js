@@ -46,7 +46,7 @@ const Main = ({ modal, toggleModal }) => {
         </div>
 
         <h1>MST3K</h1>
-        { paragraphs.map(para => <p className='large'>{ para }</p>) }
+        { paragraphs.map((para, i) => <p className='large' key={ i }>{ para }</p>) }
         <p className='small'>{ paragraphs.join(' ') }</p>
       </div>
 

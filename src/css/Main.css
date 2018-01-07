@@ -90,9 +90,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: #a8a8a8; }
+  color: #a8a8a8;
+  display: none; }
   .back-to-top span {
     margin-right: 1rem; }
+  @media screen and (max-width: 600px) {
+    .back-to-top {
+      display: flex; } }
 
 div[class^='Modal-overlay-'] {
   align-items: center; }

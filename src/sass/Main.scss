@@ -103,7 +103,9 @@ $exh-gutters: .8rem;
   justify-content: flex-end;
   align-items: flex-end;
   color: #a8a8a8;
+  display: none;
   & span { margin-right: 1rem; }
+  @media screen and (max-width: 600px) { display: flex; }
 }
 
 // modal override
@@ -128,7 +130,6 @@ div[class^='Modal-modal-'] {
     position: absolute;
     left: calc(50% - 2rem);
     top: calc(50% - 2rem);
-    // z-index: -1;
     border: solid 6px;
     border-color: #edf7f6;
     border-left-color: transparent;
