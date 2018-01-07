@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To run
 1. Please run `npm install`
-2. Run `ng start`
+2. Run `npm start`
 3. If it doesn't open a browser automaticall:
     1. open a browser window:
     2. Navigate to [http://localhost:3000](http://localhost:3000)
