@@ -3,9 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## To run
-1. Please run `npm install`
-2. Run `npm start`
-3. If it doesn't open a browser automatically:
+1. Clone or download the repo.
+2. Run `npm install`
+3. Run `npm start`
+4. If it doesn't open a browser automatically:
     1. Open a browser window:
     2. Navigate to [http://localhost:3000](http://localhost:3000)
 
